@@ -1,0 +1,9 @@
+/* 지문 공통 스타일링 */
+main#questionBank section.passage {
+	background-color: green;
+	width: 100%;
+}
+
+main#questionBank section.passage[data-type='options'] {
+	background-color: purple;
+}
