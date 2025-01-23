@@ -1,0 +1,40 @@
+@import './components/Header/style.css';
+@import './components/Question/style.css';
+@import './components/Passage/style.css';
+@import './components/Options/style.css';
+@import './components/Buttons/style.css';
+
+main#questionBank *,
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1rem;
+}
+
+main#questionBank {
+	display: flex;
+	flex-direction: column;
+}
+
+main#questionBank > header {
+	background-color: red;
+}
+main#questionBank > article {
+	background-color: blue;
+}
+main#questionBank > header > *,
+main#questionBank > article > * {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+main#questionBank h1 {
+	font-size: 3rem;
+}
+main#questionBank h2 {
+	font-size: 2rem;
+}
