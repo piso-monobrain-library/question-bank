@@ -1,0 +1,12 @@
+/* 지문 공통 스타일링 */
+main#questionBank section.buttons {
+	background-color: aqua;
+	width: 100%;
+}
+
+main#questionBank section.buttons .prev {
+	background-color: brown;
+}
+main#questionBank section.buttons .next {
+	background-color: darkgreen;
+}

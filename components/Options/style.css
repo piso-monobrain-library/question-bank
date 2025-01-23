@@ -1,0 +1,20 @@
+/* 지문 공통 스타일링 */
+main#questionBank section.options {
+	background-color: chocolate;
+	width: 100%;
+}
+main#questionBank section.options > ol {
+	list-style-type: none;
+	counter-reset: list-counter;
+}
+main#questionBank section.options > ol > li {
+	display: flex;
+	align-items: center;
+}
+main#questionBank section.options > ol > li::before {
+	content: counter(list-counter) '. ';
+	counter-increment: list-counter;
+
+	display: inline-block;
+	background-color: blanchedalmond;
+}

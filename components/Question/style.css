@@ -1,0 +1,18 @@
+/* 발문 공통 스타일링 */
+main#questionBank section.question {
+	background-color: green;
+	width: 100%;
+}
+
+/* 발문 기본 스타일링 */
+
+main#questionBank section.question {
+	background-color: tan;
+
+	display: flex;
+	gap: 1rem;
+}
+main#questionBank section.question::before {
+	content: attr(data-no);
+	display: inline-block;
+}
