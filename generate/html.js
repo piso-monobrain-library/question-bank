@@ -49,7 +49,7 @@ function createHTML(title, articles) {
         </html>
     `;
 
-	const filePath = `html/${title}.html`;
+	const filePath = `htmls/${title}.html`;
 	fs.writeFileSync(filePath, DOMString, 'utf8');
 	console.log(`HTML file has been saved as ${filePath}`);
 }

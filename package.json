@@ -1,0 +1,10 @@
+{
+	"devDependencies": {
+		"gh-pages": "^6.3.0"
+	},
+	"scripts": {
+		"generate": "rm -rf htmls && mkdir htmls && node generate/generate.js",
+		"build": "rm -rf build && mkdir build && cp -r htmls build/htmls && cp app.js build/app.js && cp common.css build/common.css",
+		"start": "npm run generate && npm run build && npx gh-pages -d build"
+	}
+}
